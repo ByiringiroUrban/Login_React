@@ -1,19 +1,35 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .container {
-  background: #fff;
+  max-width: 400px;
+  margin: 50px auto;
   padding: 20px;
+  background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
   text-align: center;
 }
 
@@ -46,4 +62,17 @@ button:hover {
 p {
   margin-top: 10px;
   color: red;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+      margin: 20px;
+      padding: 15px;
+  }
+
+  nav a {
+      display: block;
+      margin: 10px 0;
+  }
 }
